@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "deathbeacon",
+  "version": "${version}",
+  "name": "DeathBeacon",
+  "description": "Automatic death tracking, custom waypoints, and beam/HUD locators - Xaero-style waypoint manager.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.deathbeacon.DeathBeaconMod"
+    ],
+    "modmenu": [
+      "com.deathbeacon.config.ModMenuIntegrationImpl"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "cloth-config2": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
